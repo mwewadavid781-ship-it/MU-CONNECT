@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080d1a">
+  <meta name="description" content="MUCONNECT is a student-first marketplace connecting campus buyers, sellers and services.">
+  <title>MUCONNECT | Campus, connected.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="MUCONNECT home"><span class="brand-mark">M<span>+</span></span><span>MUCONNECT<small>Campus, connected.</small></span></a>
+    <nav class="nav-links"><a href="#market">Marketplace</a><a href="#stores">Stores</a><a href="#how">How it works</a></nav>
+    <button class="cart-button" id="open-cart" aria-label="Open cart">Bag <span id="cart-count">0</span></button>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse-dot"></span> BUILT FOR CAMPUS LIFE</div>
+        <h1>Your campus.<br><span>One connection.</span></h1>
+        <p>Discover student sellers, useful essentials, food and services in one simple place. Made for the way campus actually works.</p>
+        <div class="hero-actions"><a class="button primary" href="#market">Explore marketplace <span>↗</span></a><a class="text-link" href="#stores">Meet the sellers <span>→</span></a></div>
+        <div class="hero-proof"><div class="proof-avatars"><span>M</span><span>U</span><span>+</span></div><span>Local sellers. Campus convenience.</span></div>
+      </div>
+      <div class="hero-visual" aria-label="Abstract connected marketplace illustration">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="hero-core"><div class="core-logo">M<span>+</span></div><strong>MUCONNECT</strong><small>YOUR CAMPUS NETWORK</small></div>
+        <div class="float-card card-shop"><span class="float-icon">⌂</span><div><b>Campus shops</b><small>Find your essentials</small></div><span class="mini-status"></span></div>
+        <div class="float-card card-delivery"><span class="float-icon">↗</span><div><b>Easy coordination</b><small>Choose where to meet</small></div></div>
+        <div class="float-card card-community"><span class="float-icon">◎</span><div><b>Student-powered</b><small>Built around you</small></div></div>
+      </div>
+      <div class="hero-bottom"><span>01 / LOCAL MARKETPLACE</span><span>DESIGNED FOR THE NEXT GENERATION ↘</span></div>
+    </section>
+    <section class="market-section section-wrap" id="market">
+      <div class="section-heading"><div><div class="eyebrow">THE MARKETPLACE</div><h2>Good finds, <span>close by.</span></h2><p>Browse what campus sellers have to offer.</p></div><div class="live-pill"><span class="pulse-dot"></span><span id="market-mode">Marketplace preview</span></div></div>
+      <div class="market-controls"><label class="search-box"><span>⌕</span><input id="search-input" type="search" placeholder="Search products, shops, essentials..." autocomplete="off"><kbd>/</kbd></label><div class="category-tabs" id="category-tabs"><button class="active" data-category="">All</button><button data-category="Essentials">Essentials</button><button data-category="Food">Food</button><button data-category="Stationery">Stationery</button><button data-category="Services">Services</button></div></div>
+      <div id="product-grid" class="product-grid"><div class="loading-state">Loading the marketplace…</div></div>
+      <div id="empty-state" class="empty-state hidden"><span>⌕</span><h3>No matches yet</h3><p>Try another search or category.</p></div>
+    </section>
+    <section class="stores-section section-wrap" id="stores"><div class="section-heading"><div><div class="eyebrow">THE PEOPLE BEHIND THE PRODUCTS</div><h2>Meet your <span>local sellers.</span></h2><p>Every good marketplace starts with its community.</p></div></div><div id="store-grid" class="store-grid"><div class="loading-state">Finding campus sellers…</div></div></section>
+    <section class="how-section section-wrap" id="how"><div class="eyebrow">NO GUESSWORK</div><h2>Simple from <span>find to handoff.</span></h2><div class="steps-grid"><article class="step-card"><span>01</span><div class="step-icon">⌕</div><h3>Discover</h3><p>Browse listings and find a product or service that fits your needs.</p></article><article class="step-card"><span>02</span><div class="step-icon">＋</div><h3>Request</h3><p>Add items to your bag and tell the seller where you want to meet or receive delivery.</p></article><article class="step-card"><span>03</span><div class="step-icon">↗</div><h3>Confirm together</h3><p>The seller confirms stock, price and payment details before you proceed.</p></article></div></section>
+    <section class="seller-cta section-wrap"><div><div class="eyebrow">HAVE SOMETHING TO SELL?</div><h2>Your hustle deserves<br>a <span>front page.</span></h2><p>Bring your products and services to the campus community.</p></div><a class="button light" href="mailto:hello@muconnect.example?subject=MUCONNECT%20seller%20interest">Become a seller <span>↗</span></a><div class="cta-glow"></div></section>
+    <section class="assistant-section section-wrap"><div class="assistant-intro"><div class="eyebrow">A LITTLE HELP, WHEN YOU NEED IT</div><h2>Ask the <span>MUCONNECT assistant.</span></h2><p>Need help figuring out what to look for? Ask a quick marketplace question.</p></div><form id="assistant-form" class="assistant-form"><label for="assistant-question">Your question</label><div class="assistant-input-row"><input id="assistant-question" maxlength="1000" placeholder="What should I check before ordering?" required><button class="button primary" type="submit">Ask ↗</button></div><p id="assistant-answer" class="assistant-answer" aria-live="polite"></p></form></section>
+  </main>
+  <footer class="footer"><a class="brand" href="#"><span class="brand-mark">M<span>+</span></span><span>MUCONNECT<small>Campus, connected.</small></span></a><span>Project by <b>AHAK DEV × TEKARU</b></span><span>Made for campus life in Zambia.</span></footer>
+
+  <div class="overlay hidden" id="cart-overlay"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping bag" aria-hidden="true">
+    <div class="drawer-head"><div><div class="eyebrow">YOUR SELECTION</div><h2>Your bag <span id="drawer-count">(0)</span></h2></div><button class="icon-button" id="close-cart" aria-label="Close bag">×</button></div>
+    <div id="cart-items" class="cart-items"><div class="cart-empty">Your bag is waiting for its first find.</div></div>
+    <div class="cart-footer"><div class="total-row"><span>Estimated total</span><strong id="cart-total">K0.00</strong></div><small>Final price and availability must be confirmed by the seller.</small><button class="button primary full-width" id="checkout-button">Continue to request <span>→</span></button></div>
+  </aside>
+  <div class="modal-backdrop hidden" id="checkout-modal" role="dialog" aria-modal="true" aria-labelledby="checkout-title">
+    <form class="checkout-modal" id="checkout-form"><div class="drawer-head"><div><div class="eyebrow">ALMOST THERE</div><h2 id="checkout-title">Where should we meet?</h2></div><button type="button" class="icon-button" id="close-checkout" aria-label="Close checkout">×</button></div><p class="modal-note">Share your details so the seller can confirm your request. Don't enter payment PINs or passwords.</p><label>Your name<input name="customer_name" required maxlength="120" placeholder="Name to use with the seller"></label><label>Phone number<input name="phone" required maxlength="40" placeholder="e.g. 097 XXX XXXX" inputmode="tel"></label><label>Delivery / meeting location<input name="delivery_location" required maxlength="250" placeholder="Hostel, room number, landmark or meeting point"></label><label>Extra instructions <textarea name="notes" rows="3" maxlength="1000" placeholder="Optional: best time to contact you, variations, etc."></textarea></label><button class="button primary full-width" type="submit">Send order request <span>↗</span></button><p id="checkout-message" class="form-message" aria-live="polite"></p></form>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>
