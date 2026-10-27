@@ -1,4 +1,0 @@
-In muconnect/public/index.html, replace:
-Project by <b>AHAK DEV × TEKARU</b>
-with:
-Made by <b>AHAK DEV</b>
