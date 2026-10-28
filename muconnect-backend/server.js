@@ -30,7 +30,7 @@ app.post('/api/ai/chat', async (req, res) => {
 
     // Call Groq Llama 3 API
     const completion = await groq.chat.completions.create({
-      model: model: 'llama-3.3-70b-versatile',
+      model: 'llama-3.3-70b-versatile',,
       messages: [
         {
           role: 'system',
