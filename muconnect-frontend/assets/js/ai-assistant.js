@@ -1,8 +1,11 @@
 // Muconnect AI Assistant Frontend Logic
 // Connected to express backend -> Groq API
 
-const BACKEND_URL = 'http://localhost:5000'; // Replace with your Render URL when deployed
+// Before (Delete this line):
+// const BACKEND_URL = 'http://localhost:5000';
 
+// After (Paste your Render URL here!):
+const BACKEND_URL = 'https://muconnect-backend.onrender.com'; // MAKE SURE THIS IS YOUR EXACT URL
 document.addEventListener('DOMContentLoaded', () => {
   const toggleBtn = document.getElementById('aiToggleBtn');
   const closeBtn = document.getElementById('closeAiBtn');
